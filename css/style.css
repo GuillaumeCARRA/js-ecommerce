@@ -588,12 +588,29 @@ footer {
         align-items: center;
         text-align: center;
         position: relative;
-        top: -4.5%;
+        top: -3%;
     }
 
     .productTitle {
         font-size: 40px;
         margin: 0;
+    }
+
+    .productDescription {
+        font-size: 20px;
+    }
+
+    .color {
+        width: 25px;
+        height: 25px;
+    }
+
+    .size {
+        padding: 2px 10px;
+    }
+
+    .productButton {
+        padding: 5px 10px;
     }
 
     .payment {
