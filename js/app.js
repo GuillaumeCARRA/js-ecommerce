@@ -127,7 +127,7 @@ currentProductColors.forEach((color, index) => {
     color.addEventListener("click", () => {
         currentProductImg.src = choosenProduct.colors[index].img;
     });
-})
+});
 
 
 currentProductSizes.forEach((size, index) => {
@@ -143,4 +143,18 @@ currentProductSizes.forEach((size, index) => {
         size.style.backgroundColor = "black"
         size.style.color = "white"
     });
-})
+});
+
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".closeBtn");
+
+productButton.addEventListener('click', () => {
+  //display flex for see the modal
+  payment.style.display="flex";
+});
+
+close.addEventListener('click', () => {
+  //display none for close the modal
+  payment.style.display="none";
+});
